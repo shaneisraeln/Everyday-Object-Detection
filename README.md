@@ -1,8 +1,8 @@
 ---
 title: Everyday Object Vision & Voice Assistant
 emoji: 🎯
-colorFrom: black
-colorTo: gray
+colorFrom: gray
+colorTo: indigo
 sdk: gradio
 sdk_version: 6.0.0
 app_file: app.py
