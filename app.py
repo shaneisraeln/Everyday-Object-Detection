@@ -111,6 +111,18 @@ def downscale_frame(frame: np.ndarray, max_dim: int = 960) -> np.ndarray:
     return cv2.resize(frame, (int(w * scale), int(h * scale)), interpolation=cv2.INTER_AREA)
 
 
+# Hugging Face ZeroGPU decorator support
+try:
+    import spaces
+    gpu_decorator = spaces.GPU
+except Exception:
+    def gpu_decorator(func=None, **kwargs):
+        if func is not None:
+            return func
+        return lambda f: f
+
+
+@gpu_decorator
 def run_detection(
     frame: np.ndarray | None,
     conf_threshold: float | None = 0.25,
@@ -652,6 +664,7 @@ if __name__ == "__main__":
         server_port=server_port,
         inbrowser=False,
         share=False,
+        ssr_mode=False,
         css=CUSTOM_CSS,
         head=BROWSER_SPEECH_JS,
     )
