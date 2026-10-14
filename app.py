@@ -4,6 +4,17 @@ Minimalist Obsidian Dark Studio UI supporting both YOLO-World open-vocabulary
 detection and pretrained YOLO11 fallback with zero emojis.
 """
 
+# Hugging Face ZeroGPU interception hook MUST be imported before any other module
+try:
+    import spaces
+except ImportError:
+    class spaces:
+        @staticmethod
+        def GPU(func=None, **kwargs):
+            if func is not None:
+                return func
+            return lambda f: f
+
 import logging
 import os
 import time
@@ -111,18 +122,7 @@ def downscale_frame(frame: np.ndarray, max_dim: int = 960) -> np.ndarray:
     return cv2.resize(frame, (int(w * scale), int(h * scale)), interpolation=cv2.INTER_AREA)
 
 
-# Hugging Face ZeroGPU decorator support
-try:
-    import spaces
-    gpu_decorator = spaces.GPU
-except Exception:
-    def gpu_decorator(func=None, **kwargs):
-        if func is not None:
-            return func
-        return lambda f: f
-
-
-@gpu_decorator
+@spaces.GPU
 def run_detection(
     frame: np.ndarray | None,
     conf_threshold: float | None = 0.25,
