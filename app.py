@@ -663,7 +663,7 @@ if __name__ == "__main__":
         server_name="0.0.0.0",
         server_port=server_port,
         inbrowser=False,
-        share=False,
+        share=os.getenv("GRADIO_SHARE", "true").lower() in ("true", "1"),
         ssr_mode=False,
         css=CUSTOM_CSS,
         head=BROWSER_SPEECH_JS,
