@@ -1,0 +1,26 @@
+services:
+  everyday-ui:
+    build: .
+    image: everyday-vision:latest
+    container_name: everyday-vision-ui
+    command: python app.py
+    ports:
+      - "7860:7860"
+    environment:
+      - APP_ENV=production
+      - DETECTION_CONFIDENCE=0.30
+      - DEVICE=cpu
+    restart: unless-stopped
+
+  everyday-api:
+    image: everyday-vision:latest
+    depends_on:
+      - everyday-ui
+    container_name: everyday-vision-api
+    command: uvicorn api:app --host 0.0.0.0 --port 8000
+    ports:
+      - "8000:8000"
+    environment:
+      - APP_ENV=production
+      - DEVICE=cpu
+    restart: unless-stopped

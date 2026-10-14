@@ -1,0 +1,33 @@
+{
+  "hardware": {
+    "device": "cuda:0",
+    "device_name": "NVIDIA GeForce RTX 4050 Laptop GPU",
+    "pytorch_version": "2.6.0+cu124"
+  },
+  "latency_ms": {
+    "yolo11n_mean": 32.84,
+    "yolo11n_p95": 40.4,
+    "yolo_world_mean": 30.76,
+    "yolo_world_p95": 41.25
+  },
+  "vram_mb": {
+    "yolo11n": 0.0,
+    "yolo_world": 0.0
+  },
+  "coco_metrics": {
+    "yolo11n": {
+      "tp": 18,
+      "fp": 55,
+      "fn": 40,
+      "precision": 0.2466,
+      "recall": 0.3103
+    },
+    "yolo_world": {
+      "tp": 16,
+      "fp": 13,
+      "fn": 42,
+      "precision": 0.5517,
+      "recall": 0.2759
+    }
+  }
+}

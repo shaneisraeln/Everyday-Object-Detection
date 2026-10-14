@@ -1,0 +1,839 @@
+{
+  "bottle": {
+    "canonical_name": "Bottle",
+    "description": "A rigid or semi-rigid container with a narrow neck used to hold and dispense liquids.",
+    "purpose": "Used to store, transport, and dispense drinking water, beverages, and other liquids.",
+    "common_uses": [
+      "Carrying drinking water and hydration beverages",
+      "Storing cooking oils, sauces, or condiments",
+      "Packaging household and personal care liquids"
+    ],
+    "components": [
+      "Container body",
+      "Narrow opening or neck",
+      "Cap, lid, or cork",
+      "Base"
+    ],
+    "care_notes": [
+      "Rinse and wash regularly with warm soapy water or as recommended by the manufacturer.",
+      "Allow to air dry completely to avoid bacterial or mold growth."
+    ],
+    "safety_notes": [
+      "Do not pour boiling liquids into single-use plastics or containers not rated for heat.",
+      "Check that reusable bottles are BPA-free and food-safe."
+    ],
+    "limitations": [
+      "The detector identifies the broad bottle category and cannot determine contents, liquid safety, or exact material reliably from the image alone."
+    ]
+  },
+  "cup": {
+    "canonical_name": "Cup",
+    "description": "An open-top container typically used for holding and drinking hot or cold beverages.",
+    "purpose": "Designed for immediate consumption of drinking liquids.",
+    "common_uses": [
+      "Drinking water, coffee, tea, milk, or juices",
+      "Measuring ingredients in cooking",
+      "Holding pens or small desk supplies"
+    ],
+    "components": [
+      "Rim",
+      "Vessel body",
+      "Handle (often present on mugs and tea cups)",
+      "Base"
+    ],
+    "care_notes": [
+      "Wash after every use with dish soap and warm water.",
+      "Check microwave and dishwasher suitability markings on ceramic, glass, or plastic cups."
+    ],
+    "safety_notes": [
+      "Handle hot beverages with care to prevent scalds and burns.",
+      "Inspect ceramic and glassware for chips or cracks that could cause injury."
+    ],
+    "limitations": [
+      "The detector cannot distinguish ceramic, paper, or plastic composition, nor whether the cup currently contains liquid."
+    ]
+  },
+  "cell phone": {
+    "canonical_name": "Cell Phone / Smartphone",
+    "description": "A portable electronic telecommunication device with touchscreen display, camera, and compute capabilities.",
+    "purpose": "Facilitates communication, internet access, productivity, navigation, and digital photography.",
+    "common_uses": [
+      "Voice and video calling, messaging, and email",
+      "Web browsing and running mobile applications",
+      "Photography, audio recording, and media consumption",
+      "Navigation and GPS location services"
+    ],
+    "components": [
+      "Glass display screen",
+      "Rechargeable lithium battery",
+      "Cameras and sensors",
+      "Chassis, power and volume buttons",
+      "Charging port (e.g., USB-C or Lightning)"
+    ],
+    "care_notes": [
+      "Clean screen with a microfiber cloth; avoid harsh chemicals.",
+      "Protect from drops and impacts with a protective case and screen protector.",
+      "Avoid exposing the device to extreme temperatures or prolonged moisture."
+    ],
+    "safety_notes": [
+      "Use certified chargers and cables to avoid overheating and battery damage.",
+      "Do not use or charge if the battery shows signs of swelling or puncturing."
+    ],
+    "limitations": [
+      "The detector recognizes the form factor of a phone but cannot determine make, model, operating state, or lock status."
+    ]
+  },
+  "laptop": {
+    "canonical_name": "Laptop Computer",
+    "description": "A portable personal computer integrating a screen, keyboard, trackpad, and internal compute hardware.",
+    "purpose": "Used for personal, academic, and professional computing tasks on the go.",
+    "common_uses": [
+      "Software development, writing, and administrative work",
+      "Web browsing, research, and communication",
+      "Media playback, video meetings, and gaming"
+    ],
+    "components": [
+      "Display panel",
+      "Keyboard and trackpad",
+      "Internal motherboard, CPU, GPU, and RAM",
+      "Internal lithium-ion battery",
+      "External I/O ports and cooling vents"
+    ],
+    "care_notes": [
+      "Keep cooling vents clear of dust and soft surfaces like blankets.",
+      "Clean keyboard and screen with designated electronics cleaner and lint-free cloths.",
+      "Power down or put to sleep before carrying in a backpack."
+    ],
+    "safety_notes": [
+      "Keep liquids away from the keyboard and ports to avoid short circuits.",
+      "Allow adequate ventilation during heavy processing to avoid thermal throttling and overheating."
+    ],
+    "limitations": [
+      "The detector recognizes the laptop form factor but cannot determine specifications, battery health, or operating system."
+    ]
+  },
+  "mouse": {
+    "canonical_name": "Computer Mouse",
+    "description": "A handheld pointing device that detects two-dimensional motion relative to a supporting surface.",
+    "purpose": "Allows users to control the cursor and interact with graphic elements on a computer screen.",
+    "common_uses": [
+      "Navigating software interfaces and operating systems",
+      "Selecting, clicking, dragging, and scrolling content",
+      "Precision input for design, editing, and gaming"
+    ],
+    "components": [
+      "Left and right primary buttons",
+      "Scroll wheel",
+      "Optical or laser tracking sensor",
+      "Outer ergonomic shell",
+      "Cable or wireless Bluetooth/RF receiver"
+    ],
+    "care_notes": [
+      "Clean the bottom glide pads and optical sensor lens with a dry cotton swab.",
+      "Wipe down shell with mild disinfectant wipes."
+    ],
+    "safety_notes": [
+      "Practice ergonomic wrist alignment to avoid repetitive strain injuries."
+    ],
+    "limitations": [
+      "The detector cannot assess whether the mouse is wired or wireless, connected, or powered on."
+    ]
+  },
+  "keyboard": {
+    "canonical_name": "Computer Keyboard",
+    "description": "An input peripheral device with an arrangement of buttons or keys representing alphanumeric characters and functions.",
+    "purpose": "Used to enter text, commands, and shortcuts into a computer or digital terminal.",
+    "common_uses": [
+      "Typing documents, emails, and code",
+      "Navigating operating systems via hotkeys and shortcuts",
+      "Gaming controls and accessibility input"
+    ],
+    "components": [
+      "Keycaps",
+      "Key switches (membrane, mechanical, or scissor switch)",
+      "Base chassis and printed circuit board",
+      "Connection cable or wireless receiver"
+    ],
+    "care_notes": [
+      "Use compressed air to dislodge crumbs and dust between keycaps.",
+      "Avoid eating or drinking directly over the keyboard."
+    ],
+    "safety_notes": [
+      "Unplug before any deep cleaning or switch replacement.",
+      "Maintain a comfortable typing posture to reduce wrist fatigue."
+    ],
+    "limitations": [
+      "The detector cannot inspect key switch type, layout standard (QWERTY/AZERTY), or connection status."
+    ]
+  },
+  "book": {
+    "canonical_name": "Book",
+    "description": "A set of written, printed, or blank sheets bound together within covers.",
+    "purpose": "Records, preserves, and presents text and images for reading, study, or entertainment.",
+    "common_uses": [
+      "Reading literature, non-fiction, textbooks, and reference material",
+      "Note-taking and journaling (notebooks)",
+      "Visual appreciation (artbooks and photo albums)"
+    ],
+    "components": [
+      "Front and back covers",
+      "Spine and binding",
+      "Pages or leaves of paper",
+      "Title page and text block"
+    ],
+    "care_notes": [
+      "Store upright on shelves in a cool, dry area away from direct sunlight.",
+      "Avoid humid conditions that can foster mold or page warping."
+    ],
+    "safety_notes": [
+      "Paper edges can cause minor paper cuts.",
+      "Keep dry and away from open flames."
+    ],
+    "limitations": [
+      "The detector identifies the general book shape but cannot read title, author, or language from afar."
+    ]
+  },
+  "backpack": {
+    "canonical_name": "Backpack",
+    "description": "A fabric sack worn on the back with two shoulder straps.",
+    "purpose": "Used for carrying personal belongings, books, gear, and supplies hands-free.",
+    "common_uses": [
+      "Carrying school books, laptops, and stationery",
+      "Commuting, travel, and day trips",
+      "Hiking, trekking, and carrying outdoor equipment"
+    ],
+    "components": [
+      "Shoulder straps",
+      "Main storage compartment",
+      "Zipper closures and pulls",
+      "Pockets and water bottle sleeves",
+      "Padded back panel"
+    ],
+    "care_notes": [
+      "Spot clean with mild detergent and water; air dry thoroughly.",
+      "Do not overload beyond rated weight to preserve stitching and zippers."
+    ],
+    "safety_notes": [
+      "Wear with both shoulder straps to distribute load evenly and avoid spinal strain.",
+      "Ensure heavy items are packed close to the back panel."
+    ],
+    "limitations": [
+      "The detector cannot assess internal contents or weight capacity."
+    ]
+  },
+  "chair": {
+    "canonical_name": "Chair",
+    "description": "A piece of furniture designed for one person to sit on.",
+    "purpose": "Provides seated body support for rest, work, dining, or socializing.",
+    "common_uses": [
+      "Office and desk seating",
+      "Dining table seating",
+      "Relaxing in lounges, waiting rooms, or outdoors"
+    ],
+    "components": [
+      "Seat cushion or pan",
+      "Backrest",
+      "Legs or central pedestal with casters",
+      "Armrests (on select models)"
+    ],
+    "care_notes": [
+      "Check and tighten assembly bolts periodically on swivel and office chairs.",
+      "Vacuum fabric upholstery or wipe clean leather/plastic surfaces."
+    ],
+    "safety_notes": [
+      "Do not stand on wheeled chairs or use as a step stool.",
+      "Adhere to manufacturer weight limits."
+    ],
+    "limitations": [
+      "The detector cannot evaluate structural integrity or weight rating."
+    ]
+  },
+  "remote": {
+    "canonical_name": "Remote Control",
+    "description": "A handheld electronic device used to control another device wirelessly from a short distance.",
+    "purpose": "Transmits command signals (infrared or Bluetooth) to televisions, audio gear, or appliances.",
+    "common_uses": [
+      "Changing television channels, volume, and input sources",
+      "Controlling air conditioner settings and streaming players",
+      "Navigating media playback and menus"
+    ],
+    "components": [
+      "Rubber or plastic keypad buttons",
+      "Infrared (IR) emitter LED or Bluetooth transmitter",
+      "Internal printed circuit board",
+      "Battery compartment and cover"
+    ],
+    "care_notes": [
+      "Wipe down buttons with a disinfectant wipe, avoiding excessive liquid.",
+      "Replace old batteries promptly to prevent corrosive leakage."
+    ],
+    "safety_notes": [
+      "Keep button cell batteries out of reach of small children and pets."
+    ],
+    "limitations": [
+      "The detector cannot determine which specific appliance or TV model the remote pairs with."
+    ]
+  },
+  "scissors": {
+    "canonical_name": "Scissors",
+    "description": "A hand-operated cutting instrument consisting of two metal blades pivoted together.",
+    "purpose": "Used for cutting thin materials such as paper, cardboard, cloth, rope, or food.",
+    "common_uses": [
+      "Cutting craft paper, tape, and office documents",
+      "Sewing, tailoring, and fabric cutting",
+      "Kitchen food preparation (culinary shears)",
+      "Hairdressing and grooming"
+    ],
+    "components": [
+      "Two sharpened metal blades",
+      "Pivot screw or pin",
+      "Finger and thumb loop handles"
+    ],
+    "care_notes": [
+      "Wipe blades clean and dry after use to prevent rust.",
+      "Sharpen periodically with appropriate blade sharpeners."
+    ],
+    "safety_notes": [
+      "Always cut away from body and fingers.",
+      "Carry with blades pointed downward and handle forward when passing to someone else.",
+      "Keep out of reach of young children without adult supervision."
+    ],
+    "limitations": [
+      "The detector cannot judge blade sharpness or specific craft vs. kitchen shear grading."
+    ]
+  },
+  "clock": {
+    "canonical_name": "Clock",
+    "description": "An instrument designed for measuring, verifying, and displaying the passage of time.",
+    "purpose": "Provides visual or auditory timekeeping for schedule coordination and daily activities.",
+    "common_uses": [
+      "Checking the current hour, minute, and second",
+      "Setting alarms for waking up or task reminders",
+      "Decorative interior wall or desk display"
+    ],
+    "components": [
+      "Dial or digital display face",
+      "Hour, minute, and second hands (analog) or LED/LCD digits",
+      "Internal quartz or mechanical movement",
+      "Frame or housing and power source (battery/mains)"
+    ],
+    "care_notes": [
+      "Dust clock face regularly with a microfiber cloth.",
+      "Replace alkaline batteries annually to prevent leakage."
+    ],
+    "safety_notes": [
+      "Mount wall clocks securely on wall anchors to prevent falling."
+    ],
+    "limitations": [
+      "The detector cannot tell whether the clock is currently ticking or displaying accurate time."
+    ]
+  },
+  "umbrella": {
+    "canonical_name": "Umbrella",
+    "description": "A folding canopy supported by wooden or metal ribs, mounted on a central stick.",
+    "purpose": "Shields the user from rain, snow, or harsh sunlight.",
+    "common_uses": [
+      "Walking in rainy weather to stay dry",
+      "Sunshade protection on bright, hot days",
+      "Patio and beach sun shielding"
+    ],
+    "components": [
+      "Waterproof canopy fabric",
+      "Ribs and stretchers",
+      "Central shaft/pole and runner",
+      "Handle (hook, straight, or contoured)"
+    ],
+    "care_notes": [
+      "Leave umbrella open to dry completely before collapsing to avoid mildew and rust.",
+      "Keep ribs untangled when folding."
+    ],
+    "safety_notes": [
+      "Be mindful of pointed rib tips in crowded pedestrian areas.",
+      "Avoid opening against severe gale-force winds to prevent inversion."
+    ],
+    "limitations": [
+      "The detector recognizes umbrellas in open or closed form, but cannot test canopy waterproofing."
+    ]
+  },
+  "handbag": {
+    "canonical_name": "Handbag / Purse",
+    "description": "A medium-to-large handled bag used primarily for carrying personal items.",
+    "purpose": "Provides convenient portable storage for wallet, keys, phone, and daily essentials.",
+    "common_uses": [
+      "Daily personal organization and commuting",
+      "Carrying currency, cosmetics, identification, and sunglasses",
+      "Fashion accessory complementing personal attire"
+    ],
+    "components": [
+      "Main body/tote",
+      "Carrying handles and/or shoulder strap",
+      "Zipper, clasp, or magnetic closure",
+      "Interior lining and pockets"
+    ],
+    "care_notes": [
+      "Clean leather or fabric exterior with appropriate material conditioner or damp cloth.",
+      "Store stuffed with tissue paper to preserve structural shape when not in use."
+    ],
+    "safety_notes": [
+      "Keep zipped or clasped in public crowded areas to prevent pickpocketing."
+    ],
+    "limitations": [
+      "The detector cannot determine brand authenticity or internal pocket contents."
+    ]
+  },
+  "fork": {
+    "canonical_name": "Fork",
+    "description": "An eating and serving utensil consisting of a handle with several narrow tines at one end.",
+    "purpose": "Used to pierce, hold, or lift food items while dining or preparing meals.",
+    "common_uses": [
+      "Eating solid foods such as vegetables, pasta, and meat",
+      "Holding food in place while cutting with a knife",
+      "Whisking eggs or mashing soft foods like potatoes"
+    ],
+    "components": [
+      "Tines (prongs)",
+      "Root / base of tines",
+      "Utensil handle"
+    ],
+    "care_notes": [
+      "Wash with dishwashing liquid and warm water or dishwasher.",
+      "Dry thoroughly to prevent water spots on stainless steel."
+    ],
+    "safety_notes": [
+      "Prongs can be sharp; handle carefully around children."
+    ],
+    "limitations": [
+      "The detector cannot assess food cleanliness or metal grade."
+    ]
+  },
+  "knife": {
+    "canonical_name": "Knife",
+    "description": "An edge tool or utensil with a sharpened blade attached to a handle.",
+    "purpose": "Used for cutting, slicing, chopping, and preparing food or utility materials.",
+    "common_uses": [
+      "Slicing vegetables, fruits, bread, and meat",
+      "Spreading butter or spreads (table knife)",
+      "Utility cutting of packaging and materials"
+    ],
+    "components": [
+      "Sharpened blade and point",
+      "Cutting edge",
+      "Bolster / guard",
+      "Handle and tang"
+    ],
+    "care_notes": [
+      "Hand wash kitchen knives immediately after use and dry promptly.",
+      "Hone and sharpen blades regularly with a whetstone or honing steel."
+    ],
+    "safety_notes": [
+      "Always cut away from hands on a secure, stable cutting board.",
+      "Never attempt to catch a falling knife; step back and let it drop.",
+      "Store in a knife block, magnetic strip, or blade sheath out of children's reach."
+    ],
+    "limitations": [
+      "The detector cannot distinguish culinary knives from table knives or evaluate edge sharpness."
+    ]
+  },
+  "spoon": {
+    "canonical_name": "Spoon",
+    "description": "An eating and cooking utensil consisting of a small shallow bowl on a handle.",
+    "purpose": "Used primarily for scooping, serving, stirring, and eating liquids or semi-solid foods.",
+    "common_uses": [
+      "Eating soups, stews, cereals, yogurt, and ice cream",
+      "Stirring hot drinks such as tea and coffee",
+      "Measuring cooking ingredients"
+    ],
+    "components": [
+      "Shallow bowl (scoop)",
+      "Neck",
+      "Handle"
+    ],
+    "care_notes": [
+      "Dishwasher safe for stainless steel; hand wash wooden spoons promptly.",
+      "Do not soak wooden spoons in standing water."
+    ],
+    "safety_notes": [
+      "Check temperature before tasting hot soups or drinks to avoid mouth burns."
+    ],
+    "limitations": [
+      "The detector cannot verify spoon volume (tablespoon vs. teaspoon) or material grade."
+    ]
+  },
+  "bowl": {
+    "canonical_name": "Bowl",
+    "description": "A round, deep dish or container used for preparing, holding, or serving food.",
+    "purpose": "Holds liquids, salads, grains, and mixed ingredients without spilling.",
+    "common_uses": [
+      "Serving soup, cereal, noodles, and salad",
+      "Mixing batters, doughs, and marinades during cooking",
+      "Serving snacks and fruit"
+    ],
+    "components": [
+      "Curved inner basin",
+      "Rim",
+      "Base / foot"
+    ],
+    "care_notes": [
+      "Wash with dish detergent and warm water.",
+      "Check microwave-safe labeling before heating ceramics or glassware."
+    ],
+    "safety_notes": [
+      "Ceramic and glass bowls become very hot when microwaved; use oven mitts.",
+      "Discard chipped bowls to prevent ceramic shards and bacterial retention."
+    ],
+    "limitations": [
+      "The detector cannot determine if the bowl contains food or hot liquid."
+    ]
+  },
+  "banana": {
+    "canonical_name": "Banana",
+    "description": "An elongated, curved edible fruit produced by large herbaceous flowering plants.",
+    "purpose": "Consumed as a nutritious, energy-dense fresh fruit or cooking ingredient.",
+    "common_uses": [
+      "Direct snacking after peeling",
+      "Smoothies, baking (banana bread), desserts, and breakfast bowls"
+    ],
+    "components": [
+      "Protective outer peel (skin)",
+      "Edible pulp",
+      "Stem"
+    ],
+    "care_notes": [
+      "Store at room temperature away from direct sunlight; refrigerating ripens skin quickly."
+    ],
+    "safety_notes": [
+      "Banana peels on floors create slipping hazards."
+    ],
+    "limitations": [
+      "The detector cannot assess exact sweetness, ripeness, or inner bruising."
+    ]
+  },
+  "apple": {
+    "canonical_name": "Apple",
+    "description": "A round, edible pomaceous fruit produced by an apple tree.",
+    "purpose": "Consumed fresh or processed into juice, cider, applesauce, and baked dishes.",
+    "common_uses": [
+      "Fresh snacking",
+      "Salads, baking pies and tarts, making jams and sauces",
+      "Juicing and pressing cider"
+    ],
+    "components": [
+      "Outer skin / peel",
+      "Fleshy pulp",
+      "Core and seeds",
+      "Stem"
+    ],
+    "care_notes": [
+      "Store in a refrigerator crisper drawer to maintain freshness and crispness.",
+      "Wash thoroughly under running water before consumption."
+    ],
+    "safety_notes": [
+      "Apple seeds contain traces of amygdalin; avoid ingesting large quantities of chewed seeds."
+    ],
+    "limitations": [
+      "The detector cannot identify the exact apple cultivar (e.g., Honeycrisp vs. Gala) from visual form alone."
+    ]
+  },
+  "potted plant": {
+    "canonical_name": "Potted Plant",
+    "description": "A living plant grown in a container or flowerpot rather than directly in the ground.",
+    "purpose": "Provides aesthetic indoor decoration, air freshening, and horticultural enjoyment.",
+    "common_uses": [
+      "Home and office interior decoration",
+      "Air quality enhancement and biophilic ambiance",
+      "Herbal cooking (fresh culinary herbs like basil, mint)"
+    ],
+    "components": [
+      "Plant foliage, stems, and roots",
+      "Soil or potting medium",
+      "Pot or planter container",
+      "Drainage saucer"
+    ],
+    "care_notes": [
+      "Water according to specific plant species requirements; avoid overwatering.",
+      "Ensure adequate light exposure (direct, indirect, or low light)."
+    ],
+    "safety_notes": [
+      "Check toxicity for domestic pets (cats and dogs), as many common houseplants (e.g., lilies, philodendrons) are toxic if ingested."
+    ],
+    "limitations": [
+      "The detector identifies the general potted plant category and cannot identify botanical species or soil moisture."
+    ]
+  },
+  "watch": {
+    "canonical_name": "Wristwatch",
+    "description": "A portable timepiece intended to be carried or worn by a person on the wrist.",
+    "purpose": "Provides convenient and immediate timekeeping, date tracking, and fashion accessorizing.",
+    "common_uses": [
+      "Checking the current time and date",
+      "Tracking elapsed time with stopwatches or chronographs",
+      "Personal accessory and everyday style"
+    ],
+    "components": [
+      "Watch case and bezel",
+      "Dial face and hands or digital display",
+      "Crown or control buttons",
+      "Strap or bracelet with clasp",
+      "Movement mechanism (quartz, automatic, or smartwatch digital module)"
+    ],
+    "care_notes": [
+      "Wipe clean with a soft microfiber cloth to remove dust and sweat.",
+      "Check water resistance rating before submerging or showering.",
+      "Replace battery or charge periodically."
+    ],
+    "safety_notes": [
+      "Avoid wearing loose straps near rotating machinery or power tools."
+    ],
+    "limitations": [
+      "The detector cannot assess whether the watch is mechanical or digital, nor its current battery charge or time accuracy."
+    ]
+  },
+  "wristwatch": {
+    "canonical_name": "Wristwatch",
+    "description": "A portable timepiece designed to be worn on the wrist.",
+    "purpose": "Enables quick timekeeping and calendar tracking throughout the day.",
+    "common_uses": [
+      "Checking time and elapsed intervals",
+      "Personal accessory and fashion statement"
+    ],
+    "components": [
+      "Dial and hands or digital screen",
+      "Protective crystal glass",
+      "Watch strap and clasp"
+    ],
+    "care_notes": [
+      "Clean regularly with a dry lint-free cloth.",
+      "Keep away from strong magnetic fields if mechanical."
+    ],
+    "safety_notes": [
+      "Remove during heavy manual labor to prevent snagging."
+    ],
+    "limitations": [
+      "The detector recognizes the form factor but cannot authenticate brand or model."
+    ]
+  },
+  "glasses": {
+    "canonical_name": "Eyeglasses / Glasses",
+    "description": "Frames bearing lenses worn in front of the eyes for vision correction or eye protection.",
+    "purpose": "Corrects refractive errors (nearsightedness, farsightedness, astigmatism) or protects eyes from UV light.",
+    "common_uses": [
+      "Reading, driving, computer screen work",
+      "UV and sunlight protection (sunglasses)",
+      "Eye safety in workshops or sports"
+    ],
+    "components": [
+      "Optical lenses",
+      "Frame front and rims",
+      "Nose pads and bridge",
+      "Temples and earpieces",
+      "Hinges and screws"
+    ],
+    "care_notes": [
+      "Clean lenses using a dedicated microfiber cloth and lens cleaner spray; avoid rough paper towels.",
+      "Store in a rigid protective case when not in use."
+    ],
+    "safety_notes": [
+      "Do not use cracked or chipped glass lenses near eyes."
+    ],
+    "limitations": [
+      "The detector cannot measure prescription strength, lens coating type, or optical magnification."
+    ]
+  },
+  "eyeglasses": {
+    "canonical_name": "Eyeglasses",
+    "description": "A pair of corrective lenses held in a frame against the bridge of the nose and ears.",
+    "purpose": "Improves visual acuity for near, intermediate, or distance vision.",
+    "common_uses": [
+      "Daily vision enhancement",
+      "Reading and screen viewing"
+    ],
+    "components": [
+      "Lenses",
+      "Frame and bridge",
+      "Temples"
+    ],
+    "care_notes": [
+      "Rinse with lukewarm water and wipe dry with a clean microfiber cloth."
+    ],
+    "safety_notes": [
+      "Keep away from direct heat sources to prevent frame warping."
+    ],
+    "limitations": [
+      "Optical prescription cannot be determined visually."
+    ]
+  },
+  "headphones": {
+    "canonical_name": "Headphones / Headset",
+    "description": "A pair of small loudspeaker drivers worn on or around the head over a user's ears.",
+    "purpose": "Converts audio signals into private audible sound for music, calls, and monitoring.",
+    "common_uses": [
+      "Listening to music, podcasts, or lectures privately",
+      "Voice and video conferencing calls",
+      "Active noise cancellation in loud environments"
+    ],
+    "components": [
+      "Ear cups or cushions",
+      "Acoustic driver transducers",
+      "Adjustable headband",
+      "Internal battery or audio cable",
+      "Control buttons and microphone"
+    ],
+    "care_notes": [
+      "Wipe ear cushions with an alcohol-free damp cloth.",
+      "Avoid excessive cable bending or twisting.",
+      "Store in a dry protective pouch or headphone stand."
+    ],
+    "safety_notes": [
+      "Keep listening volumes below recommended thresholds (under 85 dB) to prevent permanent hearing damage."
+    ],
+    "limitations": [
+      "The detector cannot inspect driver health, wireless connection, or battery state."
+    ]
+  },
+  "pen": {
+    "canonical_name": "Pen",
+    "description": "A handheld writing instrument used to apply ink to a surface, usually paper.",
+    "purpose": "Used for handwriting, drawing, sketching, signing documents, and note-taking.",
+    "common_uses": [
+      "Writing notes, essays, and journals",
+      "Signing legal or financial documents",
+      "Artistic drawing, sketching, and calligraphy"
+    ],
+    "components": [
+      "Barrel and grip section",
+      "Ink cartridge or reservoir",
+      "Writing tip (ballpoint, rollerball, fountain nib, or gel point)",
+      "Cap or retractable click mechanism"
+    ],
+    "care_notes": [
+      "Always cap or retract the tip when not writing to prevent ink drying out.",
+      "Store horizontally or tip-down depending on ink type."
+    ],
+    "safety_notes": [
+      "Keep out of reach of very young children to avoid choking on small caps."
+    ],
+    "limitations": [
+      "The detector cannot ascertain ink color, remaining ink volume, or point size."
+    ]
+  },
+  "pencil": {
+    "canonical_name": "Pencil",
+    "description": "An implement for writing or drawing consisting of a thin graphite core enclosed in a wooden or plastic casing.",
+    "purpose": "Used for writing, technical drafting, shading, and sketching that can be erased.",
+    "common_uses": [
+      "Schoolwork, drafting, drawing, and sketching",
+      "Writing temporary notes that can be modified or corrected"
+    ],
+    "components": [
+      "Graphite/clay lead core",
+      "Wooden or mechanical casing",
+      "Eraser ferrule (on standard pencils)"
+    ],
+    "care_notes": [
+      "Sharpen carefully to avoid breaking the internal lead core.",
+      "Keep dry to prevent wood warping."
+    ],
+    "safety_notes": [
+      "Sharpened tips can pierce skin if handled carelessly."
+    ],
+    "limitations": [
+      "The detector cannot distinguish lead hardness (HB, 2B, etc.) from distance."
+    ]
+  },
+  "keys": {
+    "canonical_name": "Keys / Key Ring",
+    "description": "A cut metal device or electronic key fob used to operate a mechanical or electronic lock.",
+    "purpose": "Provides security and access control for doors, vehicles, cabinets, and locks.",
+    "common_uses": [
+      "Unlocking residential, office, or vehicle entryways",
+      "Operating vehicle ignitions or padlocks"
+    ],
+    "components": [
+      "Key blade with cuts and bittings",
+      "Bow/head",
+      "Keyring or fob enclosure"
+    ],
+    "care_notes": [
+      "Keep free from excessive grime and avoid bending or forcing in jammed locks."
+    ],
+    "safety_notes": [
+      "Do not leave keys visible in unsecured public areas to prevent unauthorized duplication."
+    ],
+    "limitations": [
+      "The detector identifies the key silhouette but cannot determine lock compatibility."
+    ]
+  },
+  "wallet": {
+    "canonical_name": "Wallet",
+    "description": "A small flat folding case used to hold paper currency, bank cards, and personal identification.",
+    "purpose": "Provides organized portable storage for financial cards, cash, and identification documents.",
+    "common_uses": [
+      "Carrying currency, debit and credit cards, and driver's licenses",
+      "Holding transit cards and business cards"
+    ],
+    "components": [
+      "Outer leather or synthetic cover",
+      "Card slots and billfold compartment",
+      "Coin pouch or ID window (on select styles)"
+    ],
+    "care_notes": [
+      "Condition leather periodically; avoid overstuffing to preserve stitching."
+    ],
+    "safety_notes": [
+      "Keep in a secure, concealed pocket in crowded transit zones to guard against theft."
+    ],
+    "limitations": [
+      "The detector cannot inspect card contents, cash value, or RFID blocking."
+    ]
+  },
+  "charger": {
+    "canonical_name": "Power Charger / Adapter",
+    "description": "An electrical power adapter and cable assembly used to replenish rechargeable battery devices.",
+    "purpose": "Converts AC mains electrical power into regulated DC power for electronic gadgets.",
+    "common_uses": [
+      "Charging smartphones, laptops, tablets, and wearable electronics",
+      "Powering peripherals and desktop accessories"
+    ],
+    "components": [
+      "Wall plug adapter block",
+      "USB or proprietary cable",
+      "Output connector (USB-C, Lightning, Barrel jack)"
+    ],
+    "care_notes": [
+      "Avoid sharply bending cables near connector boots.",
+      "Unplug by gripping the connector head rather than pulling the wire."
+    ],
+    "safety_notes": [
+      "Use certified adapters to prevent electrical hazards and overheating.",
+      "Do not use cables with exposed wires or frayed jackets."
+    ],
+    "limitations": [
+      "The detector cannot determine wattage rating, voltage output, or cable health."
+    ]
+  },
+  "calculator": {
+    "canonical_name": "Calculator",
+    "description": "An electronic or mechanical calculating device used to perform mathematical arithmetic and scientific calculations.",
+    "purpose": "Facilitates rapid numerical computation for academic, financial, and engineering tasks.",
+    "common_uses": [
+      "Solving arithmetic, algebraic, or trigonometric equations",
+      "Financial accounting and tax calculations",
+      "Classroom and engineering problem solving"
+    ],
+    "components": [
+      "Numeric and function keypad buttons",
+      "LCD or LED display screen",
+      "Internal circuit processor and solar/battery power cell"
+    ],
+    "care_notes": [
+      "Keep display screen clean with a dry microfiber cloth.",
+      "Store away from moisture and direct heat."
+    ],
+    "safety_notes": [
+      "Replace coin-cell batteries with care; keep small batteries away from infants."
+    ],
+    "limitations": [
+      "The detector identifies the calculator form factor but cannot determine specific computational modes or memory contents."
+    ]
+  }
+}

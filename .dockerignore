@@ -1,0 +1,16 @@
+__pycache__
+*.pyc
+*.pyo
+*.pyd
+.pytest_cache
+.git
+.gitignore
+.env
+datasets/
+runs/
+.mlruns/
+*.log
+*.pt
+!best.pt
+!yolov8s-worldv2.pt
+!yolo11n.pt

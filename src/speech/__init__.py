@@ -1,0 +1,1 @@
+"""Speech interfaces and contracts."""

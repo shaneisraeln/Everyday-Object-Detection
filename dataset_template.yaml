@@ -1,0 +1,40 @@
+# YOLOv8 / YOLO11 Dataset Configuration for Everyday Objects
+# Replace 'path' with the absolute or relative path to your dataset folder.
+
+path: ./dataset  # Dataset root directory
+train: images/train  # Train images relative to 'path'
+val: images/val      # Validation images relative to 'path'
+test: images/test    # Optional test images relative to 'path'
+
+# Classes: Everyday household, desk, and personal items
+names:
+  0: bottle
+  1: cup
+  2: mug
+  3: cell phone
+  4: laptop
+  5: mouse
+  6: keyboard
+  7: book
+  8: notebook
+  9: pen
+  10: pencil
+  11: scissors
+  12: keys
+  13: wallet
+  14: wristwatch
+  15: eyeglasses
+  16: headphones
+  17: charger
+  18: backpack
+  19: handbag
+  20: umbrella
+  21: remote
+  22: clock
+  23: chair
+  24: bowl
+  25: fork
+  26: knife
+  27: spoon
+  28: apple
+  29: banana
